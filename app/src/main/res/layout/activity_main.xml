@@ -42,8 +42,19 @@
             android:layout_marginLeft="5dp"
             android:background="#efefef"
             android:clickable="true"
+            android:onClick="stop"
+            android:src="@drawable/ic_baseline_indeterminate_check_box_24" />
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="#efefef"
+            android:clickable="true"
             android:onClick="insert"
             android:src="@drawable/ic_baseline_insert_link_24" />
+
 
         <ImageButton
             android:layout_width="50dp"

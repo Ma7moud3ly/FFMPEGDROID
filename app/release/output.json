@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.ma7moud3ly.ffmpegdroid",
+  "variantName": "processReleaseResources",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [
+        {
+          "key": "packageId",
+          "value": "com.ma7moud3ly.ffmpegdroid"
+        },
+        {
+          "key": "split",
+          "value": ""
+        },
+        {
+          "key": "minSdkVersion",
+          "value": "19"
+        }
+      ],
+      "versionCode": 3,
+      "versionName": "1.0",
+      "enabled": true,
+      "outputFile": "app-release.apk"
+    }
+  ]
+}
