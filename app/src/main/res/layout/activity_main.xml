@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="5dp"
+        android:background="#efefef"
+        android:breakStrategy="high_quality"
+        android:gravity="left|top"
+        android:padding="5dp"
+        android:scrollHorizontally="false"
+        android:text="-i "
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#efefef"
+            android:clickable="true"
+            android:onClick="eval"
+            android:src="@drawable/ic_baseline_send_24" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="#efefef"
+            android:clickable="true"
+            android:onClick="insert"
+            android:src="@drawable/ic_baseline_insert_link_24" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="#efefef"
+            android:clickable="true"
+            android:onClick="storage"
+            android:src="@drawable/ic_baseline_sd_storage_24" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="#efefef"
+            android:clickable="true"
+            android:onClick="clear"
+            android:src="@drawable/ic_outline_insert_drive_file_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:breakStrategy="balanced"
+        android:gravity="bottom|left"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:text="" />
+</LinearLayout>
