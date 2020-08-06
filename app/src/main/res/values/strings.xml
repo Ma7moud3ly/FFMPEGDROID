@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">FFMPEG</string>
-    <string name="convert_hint">ffmpeg -i   /storage/video.mp4   /storage/audio.mp3</string>
+    <string name="convert_hint">ffmpeg -i   /sdcard/video.mp4   /sdcard/audio.mp3</string>
 </resources>

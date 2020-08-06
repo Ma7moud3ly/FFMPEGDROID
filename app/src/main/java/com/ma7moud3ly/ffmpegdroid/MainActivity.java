@@ -243,7 +243,9 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 10003 && resultCode == Activity.RESULT_OK && data != null) {
             ArrayList<MediaFile> files = data.getParcelableArrayListExtra(FilePickerActivity.MEDIA_FILES);
-            input.getText().insert(input.getSelectionEnd(), files.get(0).getPath());
+            String path = files.get(0).getPath();
+            path = path.replace(sdcard, "/sdcard");
+            input.getText().insert(input.getSelectionEnd(), path);
         }
     }
 
