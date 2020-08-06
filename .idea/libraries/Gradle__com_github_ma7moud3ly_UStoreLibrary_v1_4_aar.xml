@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ma7moud3ly:UStoreLibrary:v1.4@aar">
+    <CLASSES>
+      <root url="jar://E:/Programs/Programming/Java/gradles/gradle-6.2.1/caches/transforms-2/files-2.1/d7782ef081c6d79c32aee8c2068e32c6/jetified-UStoreLibrary-v1.4/jars/classes.jar!/" />
+      <root url="file://E:/Programs/Programming/Java/gradles/gradle-6.2.1/caches/transforms-2/files-2.1/d7782ef081c6d79c32aee8c2068e32c6/jetified-UStoreLibrary-v1.4/res" />
+      <root url="file://E:/Programs/Programming/Java/gradles/gradle-6.2.1/caches/transforms-2/files-2.1/d7782ef081c6d79c32aee8c2068e32c6/jetified-UStoreLibrary-v1.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Programs/Programming/Java/gradles/gradle-6.2.1/caches/modules-2/files-2.1/com.github.ma7moud3ly/UStoreLibrary/v1.4/1870950b19dba5f01ad79ad38b1652e1640a3080/UStoreLibrary-v1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

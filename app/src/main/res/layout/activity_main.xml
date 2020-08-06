@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,9 +16,10 @@
         android:background="#efefef"
         android:breakStrategy="high_quality"
         android:gravity="left|top"
+        android:hint="@string/convert_hint"
         android:padding="5dp"
         android:scrollHorizontally="false"
-        android:text="-i "
+        android:text=""
         android:textColor="#000"
         android:textSize="12sp" />
 
@@ -29,61 +31,112 @@
 
 
         <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
             android:background="#efefef"
             android:clickable="true"
             android:onClick="eval"
             android:src="@drawable/ic_baseline_send_24" />
 
         <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
             android:layout_marginLeft="5dp"
             android:background="#efefef"
             android:clickable="true"
             android:onClick="stop"
-            android:src="@drawable/ic_baseline_indeterminate_check_box_24" />
-
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="#EF5350" />
 
         <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:layout_marginLeft="5dp"
+            android:background="#efefef"
+            android:clickable="true"
+            android:onClick="redo"
+            android:src="@drawable/ic_baseline_arrow_upward_24"
+            android:tint="#5C6BC0" />
+
+        <ImageButton
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:layout_marginLeft="5dp"
+            android:background="#efefef"
+            android:clickable="true"
+            android:onClick="undo"
+            android:src="@drawable/ic_baseline_arrow_downward_24"
+            android:tint="#5C6BC0" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
             android:layout_marginLeft="5dp"
             android:background="#efefef"
             android:clickable="true"
             android:onClick="insert"
-            android:src="@drawable/ic_baseline_insert_link_24" />
+            android:src="@drawable/ic_baseline_insert_link_24"
+            android:tint="#66BB6A" />
 
 
         <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
             android:layout_marginLeft="5dp"
             android:background="#efefef"
             android:clickable="true"
             android:onClick="storage"
-            android:src="@drawable/ic_baseline_sd_storage_24" />
+            android:src="@drawable/ic_baseline_sd_storage_24"
+            android:tint="#66BB6A" />
 
         <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
             android:layout_marginLeft="5dp"
             android:background="#efefef"
             android:clickable="true"
             android:onClick="clear"
-            android:src="@drawable/ic_outline_insert_drive_file_24" />
+            android:src="@drawable/ic_outline_insert_drive_file_24"
+            android:tint="#26C6DA" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/result"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:breakStrategy="balanced"
-        android:gravity="bottom|left"
-        android:padding="10dp"
-        android:scrollbars="vertical"
-        android:scrollHorizontally="false"
-        android:text="" />
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:breakStrategy="balanced"
+            android:gravity="bottom|left"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/clear_result_btn"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_width"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="clear_result"
+            android:src="@drawable/ic_outline_insert_drive_file_24"
+            android:tint="#26C6DA" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone" />
+    </FrameLayout>
 </LinearLayout>
